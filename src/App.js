@@ -1,14 +1,17 @@
-import React, { Component, Fragment } from 'react';
-
+import React, { Component } from 'react';
+//Component
+import Counter from './Containers/Counter/Counter';
+//Casecading Stylesheet
+import './App.css';
 
 class App extends Component {
 
     render() {
 
         return (
-            <Fragment>
-                <h1>Counter App</h1>
-            </Fragment>
+            <div className="App">
+                <Counter />
+            </div>
         )
     }
 }
