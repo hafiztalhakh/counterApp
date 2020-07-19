@@ -1,27 +1,16 @@
-import React, { Component } from 'react';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import React, { Component, Fragment } from 'react';
 
-import Counter from './Components/Counter';
 
 class App extends Component {
 
-  darkTheme = createMuiTheme({
-    palette: {
-      type: 'dark',
-    },
-  });
+    render() {
 
-  render() {
-
-    return (
-      <ThemeProvider theme={this.darkTheme}>
-        <CssBaseline />
-        <Counter />
-      </ThemeProvider>
-    )
-  }
+        return (
+            <Fragment>
+                <h1>Counter App</h1>
+            </Fragment>
+        )
+    }
 }
 
 export default App;
-
